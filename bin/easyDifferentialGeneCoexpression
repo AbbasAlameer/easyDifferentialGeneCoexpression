@@ -426,8 +426,8 @@ This command will print the following instructions:
 Usage: easyDifferentialGeneCoexpression -h
 
 Mandatory arguments:
-    -a                    GENE_SYMBOLS
-    -f                    user-specified CSV file
+	-a                    GENE_SYMBOLS
+    	-f                    user-specified CSV file
 	-d                    GEO dataset code
 	-v                    feature name
 	-v1                   condition 1
