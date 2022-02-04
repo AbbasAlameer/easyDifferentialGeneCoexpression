@@ -1,4 +1,4 @@
-# easyDifferentialGeneCoexpression
+# easyDifferentialGeneCoexpressionWrapper
 easyDifferentialGeneCoexpression is a wrapper program for the easyDifferentialGeneCoexpression.r R script (<a href="https://github.com/davidechicco/easyDifferentialGeneCoexpression" target="_blank" rel="noopener noreferrer">developed by Davide Chicco</a>).
 
 ## Summary
