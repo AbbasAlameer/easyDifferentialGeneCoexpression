@@ -4,7 +4,7 @@ easyDifferentialGeneCoexpression is a wrapper program for the easyDifferentialGe
 ## Summary
 <p>This is a wrapper program for the easyDifferentialGeneCoexpression.r whose function is to detect pairings of genes/probesets with the highest, significant differential coexpression. For more information, (<a href="https://cran.r-project.org/web/packages/easyDifferentialGeneCoexpression/index.html" target="_blank" rel="noopener noreferrer">see this description manual</a>).</p>
 
-## easyDifferentialGeneCoexpression dependencies
+## easyDifferentialGeneCoexpressionWrapper dependencies
 The dependencies (<i>i.e.</i> packages) used by easyDifferentialGeneCoexpression are:
 
 <p><ul><li>strict</li></ul></p>
