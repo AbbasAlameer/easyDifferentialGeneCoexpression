@@ -6,7 +6,7 @@
 # easyDifferentialGeneCoexpression, version 1.00                                                                                                                                  #
 # ----------------------------------------------                                                                                                                                  #
 #                                                                                                                                                                                 #        
-# Last Update: 7/2/22                                                                                                                                                             #
+# Last Update: 11/2/22                                                                                                                                                             #
 #                                                                                                                                                                                 #
 # Author:   Abbas Alameer <abbas.alameer@ku.edu.kw>,                                                                                                                              #
 #                      Kuwait University                                                                                                                                          #
@@ -259,20 +259,23 @@ sub input_parameters_check {
         exit;
     }
     
-    #unless (-e "$data_path/$csv_file") {
-	unless (-e "$csv_file") {
+	if (-e "$csv_file") {
 		
-		#print color ("red"), "Error: $csv_file was not found in \"$data_path\"\nPlease move the file in that directory. The script will terminate here.\n", color("reset");
-		print color ("red"), "Error: CSV file not found in location: \"$csv_file\". Make sure the path of the file is correct.\n", color("reset");
-		exit; 	
+		#copy file to the data directory. From there the Rscript command of main() will point to it.
+		system ("cp $csv_file $data_path");
+		
+		if ($csv_file =~ /.*\/(.*\..*)$/) { 
+			
+			$main_csv_file = $1;
+		} else { 
+		
+			$main_csv_file = $csv_file;	
+		}
+			
 	} else {
 		
-		if ($csv_file =~ /.+\/(.*\..*)$/) { 
-			
-			$main_csv_file = $1; 	 
-			#copy file to the data directory. From the there the Rscript command of main() will point to it.
-			system ("cp $csv_file $data_path");
-		}
+		print color ("red"), "Error: CSV file not found: \"$csv_file\". Make sure the name or path of the file is correct.\n", color("reset");
+		exit; 
 	}
 	
 	$outputResultsFile  = $outputResultsFile . "_$current_date_time";
