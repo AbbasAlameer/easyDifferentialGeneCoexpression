@@ -6,13 +6,13 @@ use 5.008000;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-  NAME             => 'App::easyDifferentialGeneCoexpression',
-  VERSION_FROM     => 'lib/App/easyDifferentialGeneCoexpression.pm',
-  ABSTRACT_FROM    => 'lib/App/easyDifferentialGeneCoexpression.pm',
+  NAME             => 'App::easyDifferentialGeneCoexpressionWrapper',
+  VERSION_FROM     => 'lib/App/easyDifferentialGeneCoexpressionWrapper.pm',
+  ABSTRACT_FROM    => 'lib/App/easyDifferentialGeneCoexpressionWrapper.pm',
   AUTHOR           => 'Abbas Alameer',
   LICENSE          => 'gpl_2',
   MIN_PERL_VERSION => '5.008000',
-  EXE_FILES        => ['bin/easyDifferentialGeneCoexpression'],
+  EXE_FILES        => ['bin/easyDifferentialGeneCoexpressionWrapper'],
   PREREQ_PM        => {
     'strict'   => 0,
     'warnings' => 0,
@@ -26,8 +26,8 @@ WriteMakefile(
       resources => {
           repository => {
               type => 'git',
-              url  => 'https://github.com/AbbasAlameer/easyDifferentialGeneCoexpression.git',
-              web  => 'https://github.com/AbbasAlameer/easyDifferentialGeneCoexpression',
+              url  => 'https://github.com/AbbasAlameer/easyDifferentialGeneCoexpressionWrapper.git',
+              web  => 'https://github.com/AbbasAlameer/easyDifferentialGeneCoexpressionWrapper',
           },
       }})
    : ()
