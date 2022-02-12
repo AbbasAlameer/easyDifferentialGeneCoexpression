@@ -1,14 +1,14 @@
-package App::easyDifferentialGeneCoexpression;
+package App::easyDifferentialGeneCoexpressionWrapper;
 
 our $VERSION = 1.00;
 
 =head1 NAME
 
-App::easyDifferentialGeneCoexpression - easyDifferentialGeneCoexpression is a wrapper program for the easyDifferentialGeneCoexpression.r R script (developed by Davide Chicco).
+App::easyDifferentialGeneCoexpressionWrapper - easyDifferentialGeneCoexpressionWrapper is a wrapper program for the easyDifferentialGeneCoexpression.r R script (developed by Davide Chicco).
 
 =head1 DESCRIPTION
 
-See F<bin/easyDifferentialGeneCoexpression> for details of the application.
+See F<bin/easyDifferentialGeneCoexpressionWrapper> for details of the application.
 
 =head1 AUTHOR
 
