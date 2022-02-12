@@ -250,6 +250,7 @@ sub input_parameters_check {
     if ($help) {
 		
 		print color ("green"), "$help_message1\n\n$help_message2", color("reset");
+		exit;
 	}
 	
     elsif (!$probesets_or_geneSymbols or !$csv_file or !$geoDatasetCode or !$featureName or !$firstCondition or !$secondCondition or !$outputResultsFile) {
